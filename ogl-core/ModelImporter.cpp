@@ -7,6 +7,13 @@
 #include <assimp/scene.h>           // Output data structure
 #include <assimp/postprocess.h>     // Post processing flags
 
+#include <iostream>
+
+static void Log(std::string str){
+	std::cout << str << std::endl;
+}
+
+
 
 Mesh* LoadMesh(aiMesh* paiMesh) {
     Mesh mesh;
