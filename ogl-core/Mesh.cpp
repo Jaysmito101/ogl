@@ -1,4 +1,5 @@
 #include <Mesh.h>
+#include <cstring>
 
 #include <glm/gtc/constants.hpp>
 #include <glm/gtc/quaternion.hpp>

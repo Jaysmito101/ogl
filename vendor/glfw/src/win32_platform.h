@@ -66,8 +66,8 @@
 
 #include <wctype.h>
 #include <windows.h>
-#include <dinput.h>
-#include <xinput.h>
+#include "dinput.h"
+#include "xinput.h"
 #include <dbt.h>
 
 // HACK: Define macros that some windows.h variants don't

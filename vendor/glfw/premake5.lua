@@ -6,6 +6,8 @@ project "GLFW"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin/intermediates/" .. outputdir .. "/%{prj.name}")
 
+	includedirs {"src/"}
+
 	files
 	{
 		"include/GLFW/glfw3.h",
@@ -74,9 +76,7 @@ project "GLFW"
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "on"
-		buildoptions "/MTd"
 
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "on"
-		buildoptions "/MT"

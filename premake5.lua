@@ -14,7 +14,6 @@ IncludeDir["GLFW"] = "ogl/vendor/glfw/include"
 IncludeDir["Glad"] = "ogl/vendor/Glad/include"
 IncludeDir["glm"] = "ogl/vendor/glm"
 IncludeDir["ImGui"] = "ogl/vendor/imgui"
-IncludeDir["ImNodes"] = "ogl/vendor/imnodes"
 IncludeDir["ImPlot"] = "ogl/vendor/implot"
 IncludeDir["ImGuiNodeEditor"] = "ogl/vendor/imgui-node-editor"
 IncludeDir["ImColorTextEdit"] = "ogl/vendor/text-editor"
@@ -24,7 +23,6 @@ IncludeDir["MuParser"] = "ogl/vendor/muparser/include"
 include "ogl/vendor/GLFW"
 include "ogl/vendor/Glad"
 include "ogl/vendor/imgui"
-include "ogl/vendor/imnodes"
 include "ogl/vendor/implot"
 include "ogl/vendor/imgui-node-editor"
 include "ogl/vendor/text-editor"
@@ -34,7 +32,7 @@ include "ogl/vendor/muparser"
 
 project "MyProject"
 	location "MyProject"
-	kind "WindowedApp"
+	kind "ConsoleApp"
 	cppdialect "C++17"
 	language "C++"
 	staticruntime "on"
@@ -70,15 +68,11 @@ project "MyProject"
 	}
 
 	links {
-		"Urlmon.lib",
-		"Crypt32",
-		"ws2_32",
-		"Pathcch",
 		"opengl32",
+		"gdi32",
 		"GLFW",
 		"Glad",
 		"ImGui",
-		"ImNodes",
 		"ImPlot",
 		"ImGuiNodeEditor",
 		"ImColorTextEdit",
@@ -93,6 +87,7 @@ project "MyProject"
 
 		defines {
 			"TERR3D_WIN32",
+			"_NO_CRT_STDIO_INLINE",
 			"_CRT_SECURE_NO_WARNINGS"
 		}
 

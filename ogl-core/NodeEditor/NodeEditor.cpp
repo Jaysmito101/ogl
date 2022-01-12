@@ -1,8 +1,25 @@
 #include "NodeEditor.h"
-#include "Base/ImGuiShapes.h"
-#include "Base/UIFontManager.h"
+#include "ImGuiShapes.h"
+#include "UIFontManager.h"
 #include "glfw/glfw3.h"
 #include "Application.h"
+
+#ifdef LINUX
+#include <unistd.h>
+#endif
+#ifdef WINDOWS
+#include <windows.h>
+#endif
+
+static void msleep(int sleepMs)
+{
+#ifdef LINUX
+    usleep(sleepMs * 1000);   // usleep takes sleep time in us (1 millionth of a second)
+#endif
+#ifdef WINDOWS
+    Sleep(sleepMs);
+#endif
+}
 
 static int uidSeed = 1;
 
@@ -445,8 +462,7 @@ void NodeEditor::DeleteNode(NodeEditorNode* node)
     mutex.lock();
     if (nodes.find(node->_id.Get()) != nodes.end()) 
     {
-        using namespace std::chrono_literals; // This Line is temporary 
-        std::this_thread::sleep_for(500ms); // This Line is temporary 
+        msleep(500); // This Line is temporary 
         node->OnDelete();
         std::vector<NodeEditorPin*> mPins = node->GetPins();
         for (NodeEditorPin* pin : mPins) {
