@@ -1,3 +1,20 @@
+<br/>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/Jaysmito101/ogl/master/ReadmeHeader.gif" border="0"></
+</p>
+
+<br/>
+<p align="center">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Jaysmito101/ogl?style=for-the-badge">
+  <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Jaysmito101/ogl?style=for-the-badge">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/Jaysmito101/ogl?style=for-the-badge">
+    <br>
+    <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2022?style=for-the-badge">
+    <a href="https://patreon.com/jaysmito101"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Djaysmito101%26type%3Dpledges&style=for-the-badge" alt="Support me on Patreon" /></a>
+</p>
+<br/>
+
+
 # ogl
 OGL - A Great Cross Platform OpenGL Base Library With Everything You might Ever need!
 
