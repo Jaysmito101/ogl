@@ -59,21 +59,21 @@ To Build:
 
 OGL provides access to the following libraries:
 
- * [assimp]()
- * [avir]()
- * [dirent]()
- * [glad]()
- * [glfw]()
- * [glm]()
- * [hdritocubemap]()
- * [imgui]()
- * [imgui-node-editor]()
- * [implot]()
- * [lua]()
- * [muparser]()
- * [stb]()
- * [imguicolortextedit]()
- * [tinyerode]()
+ * [assimp](https://github.com/assimp/assimp)
+ * [avir](https://github.com/avaneev/avir)
+ * [dirent](https://github.com/tronkko/dirent)
+ * [glad](https://github.com/Dav1dde/glad)
+ * [glfw](https://github.com/glfw/glfw)
+ * [glm](https://github.com/Groovounet/glm)
+ * [hdritocubemap](https://github.com/ivarout/HdriToCubemap)
+ * [imgui](https://github.com/ocornut/imgui)
+ * [imgui-node-editor](https://github.com/thedmd/imgui-node-editor)
+ * [implot](https://github.com/epezent/implot)
+ * [lua](https://github.com/lua/lua)
+ * [muparser](https://github.com/beltoforion/muparser)
+ * [stb](https://github.com/nothings/stb)
+ * [imguicolortextedit](https://github.com/BalazsJako/ImGuiColorTextEdit)
+ * [tinyerode](https://github.com/tay10r/TinyErode)
 
 Along with all this libraries you have access to the powerful ```ogl-core```
 It provides abstractions for most of OpenGL needs:
