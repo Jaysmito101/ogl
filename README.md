@@ -24,13 +24,13 @@ Now we need to Generate Our Project files!
 
 ### For Windows
 
-    ogl\premake\premake msvc19
+    ogl\premake\premake5 msvc19
 
 Done A MySolution.sln will be generated Just open it up with Visual Studio!
 
 ### For Linux
 
-    ./ogl/premake/premake gmake
+    ./ogl/premake/premake5 gmake
 
 This will generate the ```Makefile```s.
 
