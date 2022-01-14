@@ -20,7 +20,6 @@ OGL - A Great Cross Platform OpenGL Base Library With Everything You might Ever 
 
 For any Questions : https://discord.gg/vYFeWXUZ7A
 
-NOTE : The code in this repository is based on [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D).
 
 # How to use?
 
@@ -97,3 +96,7 @@ It provides abstractions for most of OpenGL needs:
  * SSBOs (Shader Storage Buffer Objects)
  * Font Manager
  * Cubemaps
+
+The code in this repository is being actively used in
+
+   * [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D).
