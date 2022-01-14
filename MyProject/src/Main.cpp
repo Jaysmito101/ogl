@@ -20,6 +20,7 @@
 
 static Application* myApp;
 
+// This is optional code for enabling the dockspace. This is not included within ogl-core as for most purposes it will not be used.
 static void OnBeforeImGuiRender() {
 
 	static bool dockspaceOpen = true;
