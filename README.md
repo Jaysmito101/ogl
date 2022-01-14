@@ -20,6 +20,8 @@ OGL - A Great Cross Platform OpenGL Base Library With Everything You might Ever 
 
 For any Questions : https://discord.gg/vYFeWXUZ7A
 
+NOTE : The code in this repository is based on [TerraForge3D](https://github.com/Jaysmito101/TerraForge3D).
+
 # How to use?
 
 This is made with only one thing in mind : Ease Of Use!
